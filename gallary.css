@@ -1,0 +1,14 @@
+body{
+	background-color: lightblue;
+}
+.thaba img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.place img{
+	width: 100%;
+	height: 510px;
+	object-fit: cover;
+}

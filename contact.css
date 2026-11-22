@@ -1,0 +1,13 @@
+body{
+	background-color: lightblue;
+}
+main{
+	margin-top: 50px;
+}
+section{
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 600px;
+	
+}

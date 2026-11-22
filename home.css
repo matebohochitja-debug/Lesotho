@@ -1,0 +1,16 @@
+body {
+	background-image: url("flag.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p{
+	color: red;
+}
+h1, h2{
+	color: yellow;
+}
+ul{
+	color: red;
+}

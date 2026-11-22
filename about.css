@@ -1,0 +1,17 @@
+
+body{
+	background-color: lightgrey;
+}
+
+p{
+	color: blue;
+}
+h1, h2{
+	color: blue;
+}
+.accordion-button{
+	font-weight: bold;
+}
+.accordion-body{
+	background-color: white;
+}

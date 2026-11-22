@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visit Lesotho</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="contact.css">
+ 
+</head>
+
+<body>
+
+<main class="container">
+	
+	<section>
+		
+
+		<p>
+			Do want to plan a visit to Lesotho?
+			fill in the form below
+		</p>
+
+		<h2>Please send us a message</h2>
+
+		<form id="contactForm">
+ 
+			<label  for="name" class="form-label">Your Name:</label><br>
+			<input type="text" id="name" class="form-control mb-3" required>
+
+			<label for="email" class="form-label">Your Email:</label><br>
+			<input type="email" id="email" class="form-control mb-3" required>
+
+			<label for="number" class="form-label">Your Phone Number:</label>
+			<input type="number" id="number" class="form-control mb-3" required>
+
+			<label for="message" class="form-label">Your Message:</label><br>
+
+			<textarea id="message" class="form-control mb-3" required></textarea><br>
+
+
+			<button type="submit" class="bg-secondary">Send Message</button>
+
+			<p id="result"></p>
+			
+		</form>
+
+			<a href="home.html" class="btn btn-primary">Home</a>
+
+	</section>
+</main>
+
+<script src="script.js"></script>
+<script>
+
+	function sendMessage() {
+
+		let name = document.getElementById("name").value;
+		let email = document.getElementById("email").value;
+		let number = document.getElementById("number").value;
+		let message = document.getElementById("message").value;
+
+		document.getElementById("result").innerHTML ="Thank you!" + name + "Your message has been received."; 
+	    }
+		document.getElementById('contactForm').onsubmit = function(event) {
+
+			event.preventDefault();
+
+			sendMessage();
+		};
+</script>
+
+
+</body>
+</html>
